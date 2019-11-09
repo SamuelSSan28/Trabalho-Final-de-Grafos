@@ -10,6 +10,7 @@ def dijkstra(grafo, inicio, fim,v = []):
     vertice = 0
     caminho.append(inicio)
     visitados = v
+    visitados.append(inicio)
     alternativo = []
 
     while (atual != fim):
@@ -19,10 +20,18 @@ def dijkstra(grafo, inicio, fim,v = []):
                 continue
 
             if grafo[atual][i][1] == menor:
-                alternativoAtual = dijkstra(grafo,grafo[atual][i][0],fim,v= visitados)
-                alternativoAnterior = dijkstra(grafo, anterior,fim, v=visitados)
+                visitados_local = []
+                visitados_local += visitados
 
-                if len(alternativoAnterior[0]) < len(alternativoAtual[0]) and alternativoAnterior[1] < alternativoAtual[1]:
+                alternativoAtual = dijkstra(grafo,grafo[atual][i][0],fim,v= visitados_local)
+
+                visitados_local = []
+                visitados_local += visitados
+                visitados_local.append(grafo[atual][i][0])
+
+                alternativoAnterior = dijkstra(grafo, anterior,fim, v=visitados_local)
+
+                if len(alternativoAnterior[0]) < len(alternativoAtual[0]) or alternativoAnterior[1] < alternativoAtual[1]:
                     alternativa = caminho + alternativoAnterior[0]
                 else:
                     alternativa = caminho + alternativoAtual[0]
@@ -32,12 +41,13 @@ def dijkstra(grafo, inicio, fim,v = []):
                 else:
                     caminho = alternativa
 
-                return  caminho
+                return  caminho,soma
 
             if grafo[atual][i][1] < menor and grafo[atual][i][0] not in visitados or grafo[atual][i][0] == fim :
                 menor = grafo[atual][i][1]
                 anterior = vertice = grafo[atual][i][0]
 
+            visitados.append(grafo[atual][i][0])
 
 
 
@@ -66,4 +76,9 @@ for j in dados:
         grafo.update({vertice: a})
 
 print(grafo)
-print(dijkstra(grafo, '3', '4'))
+print(dijkstra(grafo, 'A', 'F'))
+
+dados.close()
+
+dados = open('obj2.txt','a+')
+dados.close()
