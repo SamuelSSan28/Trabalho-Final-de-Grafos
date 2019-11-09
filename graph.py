@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import sys
 
 
+param  = sys.argv[1:]
+
+
 def dijkstra(grafo, inicio, fim,v = []):
     caminho = []
     soma = 0
@@ -12,6 +15,9 @@ def dijkstra(grafo, inicio, fim,v = []):
     visitados = v
     visitados.append(inicio)
     alternativo = []
+
+    if inicio not in grafo or fim not in grafo:
+        return "Erro: cheves inexistentes"
 
     while (atual != fim):
         menor = sys.maxsize
@@ -31,7 +37,7 @@ def dijkstra(grafo, inicio, fim,v = []):
 
                 alternativoAnterior = dijkstra(grafo, anterior,fim, v=visitados_local)
 
-                if len(alternativoAnterior[0]) < len(alternativoAtual[0]) or alternativoAnterior[1] < alternativoAtual[1]:
+                if alternativoAnterior[1] < alternativoAtual[1]:
                     alternativa = caminho + alternativoAnterior[0]
                 else:
                     alternativa = caminho + alternativoAtual[0]
@@ -43,7 +49,7 @@ def dijkstra(grafo, inicio, fim,v = []):
 
                 return  caminho,soma
 
-            if grafo[atual][i][1] < menor and grafo[atual][i][0] not in visitados or grafo[atual][i][0] == fim :
+            if grafo[atual][i][1] + soma < menor+soma and grafo[atual][i][0] not in visitados or grafo[atual][i][0] == fim :
                 menor = grafo[atual][i][1]
                 anterior = vertice = grafo[atual][i][0]
 
@@ -59,7 +65,7 @@ def dijkstra(grafo, inicio, fim,v = []):
 
 
 # ---------------------main----------------------#
-dados = open('obj.txt')
+dados = open("C:\\Users\\samue\\PycharmProjects\\graph\\obj.txt")
 
 grafo = {}
 i = 1
@@ -75,10 +81,12 @@ for j in dados:
     else:
         grafo.update({vertice: a})
 
-print(grafo)
-print(dijkstra(grafo, 'A', 'F'))
+if len(param):
+    menor_caminho = str(dijkstra(grafo, param[0], param[1]))
+else:
+    menor_caminho = "0"
 
 dados.close()
-
-dados = open('obj2.txt','a+')
+dados = open('C:\\Users\\samue\\PycharmProjects\\graph\\obj2.txt','w')
+dados.write(menor_caminho)
 dados.close()
