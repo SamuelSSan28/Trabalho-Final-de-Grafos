@@ -2,68 +2,92 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import sys
 
+param  = sys.argv[1:] #recebe inicio e final
 
-param  = sys.argv[1:]
+def e_Vizinho(grafo,v1,v2):
+    '''
+    Funcao verifica se o vertice v2 é vizinho vertice v1
+    :param grafo: é o grafo
+    :param v1: vertice atual
+    :param v2: possivel vizinho
+    :return:
+    '''
+    r = False
+    for i in range(len(grafo[v1])):
+        if v2 == grafo[v1][i][0]:
+            r = True
+    return  r
+
+def atualiza_soma(lista,atual,inicial):
+    '''
+    Atualiza a soma acumulada a cada atualização dos valores do Dijkstra
+    :param lista: lista de vertices não visitados
+    :param atual: vertice que está sendo visitado
+    :param inicial: vertice incial
+    :return:
+    '''
+    x =0
+    while(atual != inicial):
+        x += lista[int(atual)-1][1]
+        atual = lista[int(atual)-1][2]
+
+    return  x
 
 
-def dijkstra(grafo, inicio, fim,v = []):
-    caminho = []
-    soma = 0
+def dijkstra2(grafo,inicio):
+    '''
+    Algoritmo de Dijkstra que calcula o menor caminho de um vertice a todos os outros
+    :param grafo: é o grafo
+    :param inicio: vertice inicial
+    :return:
+        lista com o vertice e a distancia dele em relacao ao vertice inicial
+    '''
+    visitados = []
+    nao_visitados = []
     atual = inicio
-    vertice = 0
-    caminho.append(inicio)
-    visitados = v
+    soma = 0
+
+    for i in grafo:
+            nao_visitados.append([i,sys.maxsize])
+
+    nao_visitados[int(inicio)-1] = [inicio,0,inicio]
     visitados.append(inicio)
-    alternativo = []
 
-    if inicio not in grafo or fim not in grafo:
-        return "Erro: cheves inexistentes"
-
-    while (atual != fim):
-        menor = sys.maxsize
+    while (len(visitados) != len(grafo)):
         for i in range(len(grafo[atual])):
-            if grafo[atual][i][0] in caminho:
-                continue
+            if grafo[atual][i][0] not in visitados:
+                if nao_visitados[int(grafo[atual][i][0]) -1][1] > grafo[atual][i][1] + soma:
+                    nao_visitados[int(grafo[atual][i][0]) -1] = [grafo[atual][i][0],grafo[atual][i][1] + soma,atual]
 
-            if grafo[atual][i][1] == menor:
-                visitados_local = []
-                visitados_local += visitados
+        menor = [0,sys.maxsize]
+        for i in nao_visitados:
+            if i[0] not in visitados and (i[1] + soma) < (soma+menor[1]) and e_Vizinho(grafo,atual,i[0]):
+                    menor = i
 
-                alternativoAtual = dijkstra(grafo,grafo[atual][i][0],fim,v= visitados_local)
+        visitados.append(menor[0])
+        atual = menor[0]
+        soma = atualiza_soma(nao_visitados,atual,inicio)
 
-                visitados_local = []
-                visitados_local += visitados
-                visitados_local.append(grafo[atual][i][0])
+    return nao_visitados
 
-                alternativoAnterior = dijkstra(grafo, anterior,fim, v=visitados_local)
+def menor_caminho(lista,inicio,fim):
+    '''
+    Mostra o menor caminho do vertice inicial até o vertice fim
+    :param lista: saída da funcção dijkstra(grafo,inicio)
+    :param inicio: vertice inicial utilizado na função dijkstra
+    :param fim: vertice destino
+    :return:
+        retorna o caminho e o peso do caminho inicio ao fim
+    '''
+    menor = []
+    atual = fim
 
-                if alternativoAnterior[1] < alternativoAtual[1]:
-                    alternativa = caminho + alternativoAnterior[0]
-                else:
-                    alternativa = caminho + alternativoAtual[0]
+    menor.append(fim)
+    while (atual != inicio):
+        atual = lista[int(atual) - 1][2]
+        menor.append(lista[int(atual) - 1][0])
 
-                if len(alternativo) < len(alternativa) and len(alternativo) > 0:
-                    caminho = alternativo
-                else:
-                    caminho = alternativa
-
-                return  caminho,soma
-
-            if grafo[atual][i][1] + soma < menor+soma and grafo[atual][i][0] not in visitados or grafo[atual][i][0] == fim :
-                menor = grafo[atual][i][1]
-                anterior = vertice = grafo[atual][i][0]
-
-            visitados.append(grafo[atual][i][0])
-
-
-
-        caminho.append(vertice)
-        atual = vertice
-        soma += menor
-
-    return caminho,soma
-
-
+    return menor[::-1]
 # ---------------------main----------------------#
 dados = open("C:\\Users\\samue\\PycharmProjects\\graph\\obj.txt")
 
@@ -80,13 +104,33 @@ for j in dados:
         grafo[vertice].append(adjacencia)
     else:
         grafo.update({vertice: a})
+dados.close()
 
 if len(param):
-    menor_caminho = str(dijkstra(grafo, param[0], param[1]))
+    dk = dijkstra2(grafo, '5')
+    menor = (menor_caminho(dk, '5', '3'))
 else:
-    menor_caminho = "0"
+    menor = "0"
 
-dados.close()
-dados = open('C:\\Users\\samue\\PycharmProjects\\graph\\obj2.txt','w')
-dados.write(menor_caminho)
-dados.close()
+
+G = nx.Graph()
+
+for i in grafo:
+    G.add_node(i)
+    for j in grafo[i]:
+        G.add_weighted_edges_from([(i, j[0], j[1])])
+
+pos = nx.layout.random_layout(G)
+node_sizes = []
+
+for u in grafo:
+    node_sizes.append(500*len(grafo[u]))
+
+nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color='blue',label=True)
+label = nx.draw_networkx_labels(G, pos,font_size=10,font_family= "Arial")
+edges = nx.draw_networkx_edges(G, pos, arrowstyle='->', arrowsize=10, width=3)
+
+ax = plt.gca()
+ax.set_axis_off()
+plt.savefig("Graph.png", format="PNG")
+plt.show()
