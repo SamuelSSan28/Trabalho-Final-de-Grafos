@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/graph.py" description="&#10;dados = open('obj2.txt','w')&#10;dados.write(menor_ca..." line="114" />
+    <bookmark url="file://$PROJECT_DIR$/graph.py" description="&#10;dados = open('obj2.txt','w')&#10;dados.write(menor_ca..." line="118" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d79963-270c-4806-8c0f-9f1aba0073d3" name="Default Changelist" comment="">
@@ -15,16 +15,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/graph$graph.coverage" NAME="graph Coverage Results" MODIFIED="1573522775791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graph$graph.coverage" NAME="graph Coverage Results" MODIFIED="1573605006464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/graph$interface1.coverage" NAME="interface1 Coverage Results" MODIFIED="1573317707148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="46" column="10" lean-forward="true" selection-start-line="25" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="714">
+              <caret line="46" column="10" selection-start-line="25" selection-end-line="46" selection-end-column="10" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -32,23 +32,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="2091">
+              <caret line="123" column="19" lean-forward="true" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obj.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -81,14 +72,14 @@
       <list>
         <option value="$PROJECT_DIR$/obj.txt" />
         <option value="$PROJECT_DIR$/interface1.py" />
+        <option value="$PROJECT_DIR$/obj2.txt" />
         <option value="$PROJECT_DIR$/graph.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="697" />
+    <option name="x" value="659" />
+    <option name="width" value="714" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -97,7 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +189,8 @@
       <workItem from="1573243419878" duration="11804000" />
       <workItem from="1573302712965" duration="14427000" />
       <workItem from="1573395834167" duration="606000" />
-      <workItem from="1573486580364" duration="13891000" />
+      <workItem from="1573486580364" duration="14823000" />
+      <workItem from="1573591029529" duration="4734000" />
     </task>
     <task id="LOCAL-00001" summary="Dijkstra &quot;lidando&quot; com pesos iguais">
       <created>1573306739659</created>
@@ -214,11 +206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573327790147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dijkstra provavelmente prestando">
+      <created>1573522820009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573522820009</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40728000" />
+    <option name="totallyTimeSpent" value="46394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,7 +232,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11119516" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,7 +246,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.1309329" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3584288" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -262,14 +261,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dijkstra &quot;lidando&quot; com pesos iguais" />
     <MESSAGE value="Dijkstra meio bugado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra meio bugado" />
+    <MESSAGE value="Dijkstra provavelmente prestando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra provavelmente prestando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>108</line>
+          <line>112</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -311,29 +311,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="46" column="10" selection-start-line="25" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/obj.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="221">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="2091">
+          <caret line="123" column="19" lean-forward="true" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="46" column="10" lean-forward="true" selection-start-line="25" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
