@@ -74,7 +74,7 @@ def dijkstra2(grafo,inicio):
 
     return nao_visitados
 
-def menor_caminho(lista,inicio,fim):
+def menor_caminho(grafo,lista,inicio,fim):
     '''
     Mostra o menor caminho do vertice inicial até o vertice fim
     :param lista: saída da funcção dijkstra(grafo,inicio)
@@ -86,6 +86,8 @@ def menor_caminho(lista,inicio,fim):
     menor = []
     atual = fim
 
+    if fim not in grafo:
+        return 0
     menor.append(fim)
     while (atual != inicio):
         atual = lista[int(atual) - 1][2]
@@ -112,7 +114,10 @@ dados.close()
 
 if len(param): #se ao executar os parametros foram colocados na ordem certa
     dk = dijkstra2(grafo, param[0])
-    menor = (menor_caminho(dk,param[0], param[1]))
+    menor = (menor_caminho(grafo,dk,param[0], param[1]))
+
+    if dk == 0:
+        menor = 0
 else:
     print("Erro: Não passou os parametros")
     menor = 0
@@ -128,7 +133,6 @@ if menor != 0:
 
     pos = nx.planar_layout(G)
 
-    print(pos)
     node_sizes = []
     cores = [""]*len(grafo)
     pesos = []
@@ -142,10 +146,12 @@ if menor != 0:
     nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color=cores,label=True)
     label = nx.draw_networkx_labels(G, pos,font_size=10,font_family= "Arial")
     edges = nx.draw_networkx_edges(G, pos, arrowstyle='->', arrowsize=5, width=3)
-    #edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels)
+    #edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels) #falta adicionar os pesos
     ax = plt.gca()
     ax.set_axis_off()
     titlo = "Menor caminho de " + str(menor[0]) + " a " +str(menor[len(menor)-1])
     plt.title(titlo)
     plt.savefig("Graph.png", format="PNG")
     plt.show()
+else:
+    print("Erro: Chaves não existem")
