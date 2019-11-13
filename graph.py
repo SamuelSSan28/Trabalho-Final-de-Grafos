@@ -67,7 +67,7 @@ def dijkstra2(grafo,inicio):
         for i in nao_visitados: #percorre os vizinhosnão  visitados
             if i[0] not in visitados and (i[1] + soma) < (soma+menor[1]) and e_Vizinho(grafo,atual,i[0]): # encontra o menor vizinho não visitado
                     menor = i
-
+        print(atual)
         visitados.append(menor[0]) #adiciona o vertice a lista de visitados
         atual = menor[0] # atualiza o vertice atual para o que vai ser visitado agora
         soma = atualiza_soma(nao_visitados,atual,inicio) # atualiza soma de acordo com o vertice atual
@@ -90,12 +90,13 @@ def menor_caminho(grafo,lista,inicio,fim):
         return 0
     menor.append(fim)
     while (atual != inicio):
+        print(atual)
         atual = lista[int(atual) - 1][2]
         menor.append(lista[int(atual) - 1][0])
 
     return menor[::-1]
 # ---------------------main----------------------#
-dados = open("obj.txt") #leitura dos dados do grafo
+dados = open("obj3.txt") #leitura dos dados do grafo
 
 grafo = {}
 i = 1
@@ -114,6 +115,7 @@ dados.close()
 
 if len(param) == 2: #se ao executar os parametros foram colocados na ordem certa
     dk = dijkstra2(grafo, param[0])
+    #print(dk)
     menor = (menor_caminho(grafo,dk,param[0], param[1]))
 
     if dk == 0:
@@ -136,13 +138,16 @@ if menor != 0:
     node_sizes = []
     cores = [""]*len(grafo)
     pesos = []
-    for key in grafo:
+    i = 0
+    for key in G.nodes():
         node_sizes.append(500*len(grafo[key]))
         if key in menor:
-            cores[int(key)-1]= "red"
+            cores[i]= "red"
         else:
-            cores[int(key)-1] = "blue"
+            cores[i] = "blue"
+        i += 1
 
+    print(cores,G.nodes())
     nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color=cores,label=True)
     label = nx.draw_networkx_labels(G, pos,font_size=10,font_family= "Arial")
     edges = nx.draw_networkx_edges(G, pos, arrowstyle='->', arrowsize=5, width=3)
