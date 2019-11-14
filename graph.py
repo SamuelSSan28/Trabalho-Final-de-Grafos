@@ -42,7 +42,6 @@ def dijkstra2(grafo,inicio):
     visitados.append(inicio) #visitando o vertice inicial
 
     while (len(visitados) != len(grafo)): #enquanto a lista de visitados for menor que a quantidade de vvertices faça:
-
         for i in range(len(grafo[atual])): #percorre todos os vizinho do vertice i atualizando os custos
             if grafo[atual][i][0] not in visitados: # se o vizinho não foi visitado
                 if nao_visitados[int(grafo[atual][i][0]) -1][1] > grafo[atual][i][1] + soma: # e se novo custo for menor do que está nesse vertice
@@ -53,7 +52,6 @@ def dijkstra2(grafo,inicio):
         for i in nao_visitados: #percorre os vizinhos não  visitados
             if i[0] not in visitados and (i[1] + soma) < (soma+menor[1]): # encontra o menor vizinho não visitado
                     menor = i
-
 
         visitados.append(menor[0]) #adiciona o vertice a lista de visitados
         atual = menor[0] # atualiza o vertice atual para o que vai ser visitado agora
