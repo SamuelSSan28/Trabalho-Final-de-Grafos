@@ -4,21 +4,6 @@ import sys
 
 param  = sys.argv[1:] #recebe inicio e final param[0]: inicio
                                            # param[1]: destino
-
-def e_Vizinho(grafo,v1,v2):
-    '''
-    Funcao verifica se o vertice v2 é vizinho vertice v1
-    :param grafo: é o grafo
-    :param v1: vertice atual
-    :param v2: possivel vizinho
-    :return:
-    '''
-    r = False
-    for i in range(len(grafo[v1])):
-        if v2 == grafo[v1][i][0]:
-            r = True
-    return  r
-
 def atualiza_soma(lista,atual,inicial):
     '''
     Atualiza a soma acumulada a cada atualização dos valores do Dijkstra
@@ -64,13 +49,15 @@ def dijkstra2(grafo,inicio):
                     nao_visitados[int(grafo[atual][i][0]) -1] = [grafo[atual][i][0],grafo[atual][i][1] + soma,atual] # recebe novo custo
 
         menor = [0,sys.maxsize] # inicializando menor
-        for i in nao_visitados: #percorre os vizinhosnão  visitados
-            if i[0] not in visitados and (i[1] + soma) < (soma+menor[1]) and e_Vizinho(grafo,atual,i[0]): # encontra o menor vizinho não visitado
+
+        for i in nao_visitados: #percorre os vizinhos não  visitados
+            if i[0] not in visitados and (i[1] + soma) < (soma+menor[1]): # encontra o menor vizinho não visitado
                     menor = i
-        print(atual)
+
+
         visitados.append(menor[0]) #adiciona o vertice a lista de visitados
         atual = menor[0] # atualiza o vertice atual para o que vai ser visitado agora
-        soma = atualiza_soma(nao_visitados,atual,inicio) # atualiza soma de acordo com o vertice atual
+        soma = atualiza_soma(nao_visitados,atual,menor[2]) # atualiza soma de acordo com o vertice atual
 
     return nao_visitados
 
@@ -95,37 +82,12 @@ def menor_caminho(grafo,lista,inicio,fim):
         menor.append(lista[int(atual) - 1][0])
 
     return menor[::-1]
-# ---------------------main----------------------#
-dados = open("obj3.txt") #leitura dos dados do grafo
 
-grafo = {}
-i = 1
-for j in dados: #leitura do arquivo para filtras as informações e gerar o grafo
-    j = j.replace('\n', '')
-    a = []
-    adjacencia = j.split(',')
-    vertice = adjacencia.pop(0)
-    adjacencia[1] = int(adjacencia[1])
-    a.append(adjacencia)
-    if vertice in grafo:
-        grafo[vertice].append(adjacencia)
-    else:
-        grafo.update({vertice: a})
-dados.close()
 
-if len(param) == 2: #se ao executar os parametros foram colocados na ordem certa
-    dk = dijkstra2(grafo, param[0])
-    #print(dk)
-    menor = (menor_caminho(grafo,dk,param[0], param[1]))
-
-    if dk == 0:
-        menor = 0
-else:
-    print("Erro: Não passou os parametros")
-    menor = 0
-
-if menor != 0:
-    #imprimindo o grafico graficamene kkkkk
+def graph_plot(grafo,dk):
+    # imprimindo o grafico graficamene kkkkk
+    menor = (menor_caminho(grafo, dk, param[0], param[1]))
+    print(menor)
     G = nx.Graph()
 
     for i in grafo:
@@ -133,29 +95,59 @@ if menor != 0:
         for j in grafo[i]:
             G.add_weighted_edges_from([(i, j[0], j[1])])
 
-    pos = nx.planar_layout(G)
-    grafo_labels = nx.get_edge_attributes(G,'weight')
+    pos = nx.kamada_kawai_layout(G)
+    grafo_labels = nx.get_edge_attributes(G, 'weight')
     node_sizes = []
-    cores = [""]*len(grafo)
+    cores = [""] * len(grafo)
     pesos = []
     i = 0
     for key in G.nodes():
-        node_sizes.append(500*len(grafo[key]))
+        node_sizes.append(500 * len(grafo[key]))
         if key in menor:
-            cores[i]= "red"
+            cores[i] = "red"
         else:
-            cores[i] = "blue"
+            cores[i] = "black"
         i += 1
 
-    print(cores,G.nodes())
-    nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color=cores,label=True)
-    label = nx.draw_networkx_labels(G, pos,font_size=10,font_family= "Arial")
-    edges = nx.draw_networkx_edges(G, pos, arrowstyle='->', arrowsize=5, width=3)
-    edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels = grafo_labels)
+    nodes = nx.draw_networkx_nodes(G, pos, node_size=130, node_color=cores, label=True)
+    label = nx.draw_networkx_labels(G, pos, font_size=8, font_family="Arial", font_color='white')
+    edges = nx.draw_networkx_edges(G, pos, width=1)
+    edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels=grafo_labels, font_size=6)
     ax = plt.gca()
     ax.set_axis_off()
-    titlo = "Menor caminho de " + str(menor[0]) + " a " +str(menor[len(menor)-1])
-    plt.title(titlo)
+    titulo = "Menor caminho de " + str(menor[0]) + " a " + str(menor[len(menor) - 1])
+    plt.title(titulo)
     plt.savefig("Graph.png", format="PNG")
     plt.show()
 
+
+def main():
+    dados = open("obj3.txt") #leitura dos dados do grafo
+
+    grafo = {}
+    i = 1
+    for j in dados: #leitura do arquivo para filtras as informações e gerar o grafo
+        j = j.replace('\n', '')
+        a = []
+        adjacencia = j.split(',')
+        vertice = adjacencia.pop(0)
+        adjacencia[1] = int(adjacencia[1])
+        a.append(adjacencia)
+        if vertice in grafo:
+            grafo[vertice].append(adjacencia)
+        else:
+            grafo.update({vertice: a})
+    dados.close()
+
+    #print(grafo)
+    if len(param) == 2: #se ao executar os parametros foram colocados na ordem certa
+        dk = dijkstra2(grafo, param[0])
+        graph_plot(grafo,dk)
+    else:
+        print("Erro: Não passou os parametros")
+        menor = 0
+
+
+
+
+main()
