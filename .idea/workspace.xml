@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+            <state relative-caret-position="542">
+              <caret line="146" selection-start-line="146" selection-end-line="146" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -215,7 +215,7 @@
       <workItem from="1573486580364" duration="14823000" />
       <workItem from="1573591029529" duration="4734000" />
       <workItem from="1573686697097" duration="7591000" />
-      <workItem from="1573759367510" duration="7904000" />
+      <workItem from="1573759367510" duration="8010000" />
     </task>
     <task id="LOCAL-00001" summary="Dijkstra &quot;lidando&quot; com pesos iguais">
       <created>1573306739659</created>
@@ -252,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573768765629</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dijkstra prestando e interface ok">
+      <created>1573769131134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573769131134</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61889000" />
+    <option name="totallyTimeSpent" value="61995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+        <state relative-caret-position="542">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

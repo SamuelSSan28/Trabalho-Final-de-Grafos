@@ -140,13 +140,10 @@ def main():
             grafo.update({vertice: a})
     dados.close()
 
-    #print(grafo)
     if len(param) == 2: #se ao executar os parametros foram colocados na ordem certa
         graph_plot(grafo)
     else:
         print("Erro: Não passou os parametros")
-        menor = 0
-
 
 
 
