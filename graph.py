@@ -82,41 +82,44 @@ def menor_caminho(grafo,lista,inicio,fim):
     return menor[::-1]
 
 
-def graph_plot(grafo,dk):
-    # imprimindo o grafico graficamene kkkkk
+def graph_plot(grafo):
+    '''
+    è responsavel por imprimir o grafico graficamene kkkkk
+    :param grafo: é o grafo
+    :return:
+    '''
+    dk = dijkstra2(grafo, param[0])
     menor = (menor_caminho(grafo, dk, param[0], param[1]))
     print(menor)
     G = nx.Graph()
 
-    for i in grafo:
+    for i in grafo: #adicionado vertices,arestas e pesos no grafo
         G.add_node(i)
         for j in grafo[i]:
             G.add_weighted_edges_from([(i, j[0], j[1])])
 
-    pos = nx.kamada_kawai_layout(G)
-    grafo_labels = nx.get_edge_attributes(G, 'weight')
-    node_sizes = []
-    cores = [""] * len(grafo)
-    pesos = []
+    pos = nx.kamada_kawai_layout(G) #layout do grafo
+    grafo_labels = nx.get_edge_attributes(G, 'weight') #lista com os pesos
+    cores = [""] * len(grafo) #lista de cores de cada vertice do grafo
+
     i = 0
-    for key in G.nodes():
-        node_sizes.append(500 * len(grafo[key]))
+    for key in G.nodes(): #colorindo o menor caminho
         if key in menor:
             cores[i] = "red"
         else:
             cores[i] = "black"
         i += 1
 
-    nodes = nx.draw_networkx_nodes(G, pos, node_size=130, node_color=cores, label=True)
-    label = nx.draw_networkx_labels(G, pos, font_size=8, font_family="Arial", font_color='white')
-    edges = nx.draw_networkx_edges(G, pos, width=1)
-    edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels=grafo_labels, font_size=6)
+    nodes = nx.draw_networkx_nodes(G, pos, node_size=130, node_color=cores, label=True) #desenhando nodes
+    label = nx.draw_networkx_labels(G, pos, font_size=8, font_family="Arial", font_color='white')#desenhando nomes/labes nos nodes
+    edges = nx.draw_networkx_edges(G, pos, width=1)#desenhando arestas
+    edges_label = nx.draw_networkx_edge_labels(G, pos, edge_labels=grafo_labels, font_size=6)#desenhando pesos
     ax = plt.gca()
     ax.set_axis_off()
     titulo = "Menor caminho de " + str(menor[0]) + " a " + str(menor[len(menor) - 1])
     plt.title(titulo)
-    plt.savefig("Graph.png", format="PNG")
-    plt.show()
+    plt.savefig("Graph.png", format="PNG") #salvando grafo
+    plt.show() #exibindo o grafo graficamente
 
 
 def main():
@@ -139,8 +142,7 @@ def main():
 
     #print(grafo)
     if len(param) == 2: #se ao executar os parametros foram colocados na ordem certa
-        dk = dijkstra2(grafo, param[0])
-        graph_plot(grafo,dk)
+        graph_plot(grafo)
     else:
         print("Erro: Não passou os parametros")
         menor = 0
