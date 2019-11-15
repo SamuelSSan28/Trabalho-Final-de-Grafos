@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/graph.py" description="&#10;dados = open('obj2.txt','w')&#10;dados.write(menor_ca..." line="118" />
+    <bookmark url="file://$PROJECT_DIR$/graph.py" description="&#10;dados = open('obj2.txt','w')&#10;dados.write(menor_ca..." line="123" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d79963-270c-4806-8c0f-9f1aba0073d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +34,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" column="19" lean-forward="true" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+            <state relative-caret-position="461">
+              <caret line="156" column="35" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="35" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/obj.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,7 +198,7 @@
       <workItem from="1573302712965" duration="14427000" />
       <workItem from="1573395834167" duration="606000" />
       <workItem from="1573486580364" duration="14823000" />
-      <workItem from="1573591029529" duration="4734000" />
+      <workItem from="1573591029529" duration="5734000" />
     </task>
     <task id="LOCAL-00001" summary="Dijkstra &quot;lidando&quot; com pesos iguais">
       <created>1573306739659</created>
@@ -213,11 +221,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573522820009</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dijkstra bunitinho">
+      <created>1573607064852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573607064853</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Dijkstra bunitinho">
+      <created>1573607504506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573607504506</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46394000" />
+    <option name="totallyTimeSpent" value="47394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -230,7 +252,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -262,17 +283,11 @@
     <MESSAGE value="Dijkstra &quot;lidando&quot; com pesos iguais" />
     <MESSAGE value="Dijkstra meio bugado" />
     <MESSAGE value="Dijkstra provavelmente prestando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra provavelmente prestando" />
+    <MESSAGE value="Dijkstra bunitinho" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra bunitinho" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -340,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="19" lean-forward="true" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+        <state relative-caret-position="461">
+          <caret line="156" column="35" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="35" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
