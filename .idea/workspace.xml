@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/graph.py" description="&#10;dados = open('obj2.txt','w')&#10;dados.write(menor_ca..." line="123" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d79963-270c-4806-8c0f-9f1aba0073d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="28d79963-270c-4806-8c0f-9f1aba0073d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface1.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,6 +44,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
               <caret line="156" column="35" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="35" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="146" selection-start-line="146" selection-end-line="146" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -43,6 +58,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/obj.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,6 +68,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -65,6 +83,10 @@
     <findStrings>
       <find>VISITADOS</find>
       <find>alternativo</find>
+<<<<<<< HEAD
+=======
+      <find>print</find>
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,13 +103,23 @@
         <option value="$PROJECT_DIR$/obj.txt" />
         <option value="$PROJECT_DIR$/interface1.py" />
         <option value="$PROJECT_DIR$/obj2.txt" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/nxdk.py" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
         <option value="$PROJECT_DIR$/graph.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="659" />
     <option name="width" value="714" />
+=======
+    <option name="x" value="847" />
+    <option name="y" value="70" />
+    <option name="width" value="697" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,17 +128,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="graph" type="b2602c69:ProjectViewProjectNode" />
               <item name="graph" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Trabalho-Final-de-Grafos-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trabalho-Final-de-Grafos-master" type="462c0819:PsiDirectoryNode" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
     </panes>
   </component>
@@ -117,6 +159,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+=======
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel\Desktop\Trabalho-Final-de-Grafos-master" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel\Desktop\Trabalho-Final-de-Grafos-master" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
       <recent name="C:\Users\samue\PycharmProjects\graph" />
     </key>
   </component>
@@ -140,9 +200,15 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
+<<<<<<< HEAD
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
+=======
+      <option name="SDK_HOME" value="C:\Users\Samuel\PycharmProjects\Graph\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -177,9 +243,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Python.graph" />
+=======
+    <configuration name="nxdk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="graph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nxdk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.graph" />
+      <item itemvalue="Python.interface1" />
+      <item itemvalue="Python.nxdk" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.graph" />
+        <item itemvalue="Python.nxdk" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
         <item itemvalue="Python.interface1" />
       </list>
     </recent_temporary>
@@ -198,7 +298,13 @@
       <workItem from="1573302712965" duration="14427000" />
       <workItem from="1573395834167" duration="606000" />
       <workItem from="1573486580364" duration="14823000" />
+<<<<<<< HEAD
       <workItem from="1573591029529" duration="5734000" />
+=======
+      <workItem from="1573591029529" duration="4734000" />
+      <workItem from="1573686697097" duration="7591000" />
+      <workItem from="1573759367510" duration="8010000" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     </task>
     <task id="LOCAL-00001" summary="Dijkstra &quot;lidando&quot; com pesos iguais">
       <created>1573306739659</created>
@@ -221,6 +327,7 @@
       <option name="project" value="LOCAL" />
       <updated>1573522820009</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="Dijkstra bunitinho">
       <created>1573607064852</created>
       <option name="number" value="00004" />
@@ -240,6 +347,34 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="47394000" />
+=======
+    <task id="LOCAL-00004" summary="Dijkstra prestando e interface ok">
+      <created>1573768427172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573768427172</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Dijkstra prestando e interface ok">
+      <created>1573768765629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573768765629</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dijkstra prestando e interface ok">
+      <created>1573769131134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573769131134</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="61995000" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -251,6 +386,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
@@ -273,6 +409,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+=======
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10475578" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33378196" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4942717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32839838" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32839838" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39030954" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32839838" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.7345758" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -283,8 +444,13 @@
     <MESSAGE value="Dijkstra &quot;lidando&quot; com pesos iguais" />
     <MESSAGE value="Dijkstra meio bugado" />
     <MESSAGE value="Dijkstra provavelmente prestando" />
+<<<<<<< HEAD
     <MESSAGE value="Dijkstra bunitinho" />
     <option name="LAST_COMMIT_MESSAGE" value="Dijkstra bunitinho" />
+=======
+    <MESSAGE value="Dijkstra prestando e interface ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra prestando e interface ok" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,6 +468,7 @@
       </configuration>
     </watches-manager>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://C:/Python/Python37/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -332,20 +499,62 @@
           <caret line="46" column="10" selection-start-line="25" selection-end-line="46" selection-end-column="10" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+=======
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Trabalho_Final_de_Grafos_master$nxdk.coverage" NAME="nxdk Coverage Results" MODIFIED="1573763771786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Trabalho_Final_de_Grafos_master$graph.coverage" NAME="graph Coverage Results" MODIFIED="1573764453199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Python/Python37/Lib/codecs.py" />
+    <entry file="file://C:/Python/Python37/Lib/_bootlocale.py" />
+    <entry file="file://$PROJECT_DIR$/../test/grafos-master/Algoritmo de Dijkstra/teste.py" />
+    <entry file="file://$PROJECT_DIR$/../test/grafos-master/Algoritmo de Dijkstra/dijkstraalgorithm.py" />
+    <entry file="file://C:/Python/Python37/Lib/site-packages/networkx/classes/graph.py" />
+    <entry file="file://$PROJECT_DIR$/interface1.py" />
+    <entry file="file://$PROJECT_DIR$/../gera.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obj2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nxdk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/obj2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/obj3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/obj.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -357,6 +566,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="156" column="35" selection-start-line="156" selection-start-column="35" selection-end-line="156" selection-end-column="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+>>>>>>> dde51c51a2dcf25d05a44c2e79825dd4d85f031a
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

@@ -1,10 +1,38 @@
-1 Rua A
-2 Rua B
-3 Rua C
-4 Rua D
-5 Rua E
-6 Rua F
-7 Rua G
-8 Rua H
-9 Rua I
-10 Rua J
+1;Rua Rui Barbosa, 1873 - Piraja
+2;Rua Ceara, 900 - Piraja
+3;Rua Joao Cabral, 1869 - Vermelha
+4;Rua Ceara, 599 - Piraja
+5;Rua Ceara, 2 - Piraja
+6;Rua Rui Barbosa, 1801 - Centro (Sul)
+7;Rua Piaui, 842 - Matinha
+8;Rua Piaui, 776 - Matinha
+9;Rua Monsenhor Boson, 262 - Matinha
+10;Rua Piaui, 560 - Matinha
+11;Rua Padre Marcos, 177 - Matinha
+12;Rua Piaui, 1 - Matinha
+13;Rua Rui Barbosa, 1696 - Centro (Sul)
+14;Rua Para, 871 - Matinha
+15;Rua Joao Cabral, 1699 - Vermelha
+16;Rua Para, 584 - Matinha 
+17;Rua Padre Acelino Portela, 139 - Matinha
+18;Rua Para, 445 - Matinha
+19;Rua Padre Marcos, 1698 - Matinha
+20;Alameda Parnaiba, 966 - Matinha 
+21;Rua Joao Cabral, 1589 - Vermelha
+22;Alameda Parnaiba, 663 - Matinha
+23;Rua Padre Acelino Portela, 1 - Matinha
+24;Alameda Parbaiba, 512 - Matinha
+25;Alamenda Parbaiba, 511 - 	Matinha
+26;Alameda Parnaiba, 399 - Matinha
+27;Rua Joao Cabral, 1491 - Vermelha
+28;Rua Amazonas, 757 - Matinha
+29;Alameda Parnaiba, 399 - Matinha
+30;Rua Rui Barbosa, 1431 - Centro (Sul)
+31;Praça Firmina Sobreira, 2 - Matinha
+32;Rua Joao Cabral, 1417 - Vermelha
+33;Rua Alcides Freitas, 399 - Matinha
+34;Rua Manoel Domingues, 826 - Porenquanto
+35;Rua Joao Cabral, 1321 - Vermelha
+36;Rua Manoel Domingues, 1 - Porenquanto
+37;Rua Joao Cabral, 1250 - Vermelha
+38;Avenida Maranhao, 1098 - Matinha
